@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Icons -->
+  
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Materialize CSS CDN -->
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Tipografías solicitadas -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 
-  <!-- Archivo de estilos -->
+  
   <link rel="stylesheet" href="css/style.css">
 
   <title>EcoFuture - Tecnología Sostenible</title>
 </head>
 <body>
 
-  <!-- NAVBAR FIJA -->
+  
   <div class="navbar-fixed">
     <nav class="green-main">
       <div class="nav-wrapper container">
@@ -34,11 +34,11 @@
     </nav>
   </div>
 
-  <!-- SECCIÓN INICIO -->
+  
   <section id="inicio" class="container section-space">
     <h2 class="center-align titulo">Tecnología para un Futuro Sostenible</h2>
 
-    <!-- CARD DESTACADA -->
+    
     <div class="card">
       <div class="card-image">
         <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=60">
@@ -52,7 +52,7 @@
     </div>
   </section>
 
-  <!-- SECCIÓN FORMULARIO -->
+  
   <section id="contacto" class="container section-space">
     <h3 class="center-align titulo">Únete a nuestra comunidad</h3>
 
@@ -75,7 +75,7 @@
             </button>
         </div>
 
-        <!-- BOTÓN FLOTANTE -->
+        
         <div class="fixed-action-btn">
           <button class="btn-floating btn-large green-main waves-effect waves-light modal-trigger" href="#modal1" type="submit">
             <i class="material-icons">send</i>
@@ -86,7 +86,7 @@
     </div>
   </section>
 
-  <!-- MODAL -->
+  
   <div id="modal1" class="modal">
     <div class="modal-content center-align">
       <h4>¡Gracias por unirte!</h4>
@@ -97,7 +97,7 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
+  
   <footer class="page-footer green-main" id="nosotros">
     <div class="container">
       <div class="row">
@@ -105,7 +105,7 @@
           <h5 class="white-text">EcoFuture</h5>
           <p class="white-text">Tecnología con propósito ambiental</p>
 
-          <!-- ICONOS -->
+          
           <a href="#" class="white-text social-icon"><i class="material-icons">facebook</i></a>
           <a href="#" class="white-text social-icon"><i class="material-icons">public</i></a>
           <a href="#" class="white-text social-icon"><i class="material-icons">mail</i></a>
@@ -118,17 +118,17 @@
     </div>
   </footer>
 
-  <!-- JAVASCRIPT MATERIALIZE -->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <script>
-    // Inicializar modal
+    
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.modal');
       M.Modal.init(elems);
     });
 
-    // Evitar refresh y abrir modal
+    
     document.getElementById("formEco").addEventListener("submit", function(e){
       e.preventDefault();
       var modal = M.Modal.getInstance(document.getElementById("modal1"));
@@ -138,3 +138,4 @@
 
 </body>
 </html>
+
