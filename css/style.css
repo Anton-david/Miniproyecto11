@@ -1,0 +1,33 @@
+/* COLORES Y TIPOGRAFÍA */
+body {
+  background-color: #F5F5F5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+}
+
+/* COLOR PRINCIPAL ECOFUTURE */
+.green-main {
+  background-color: #43A047 !important;
+}
+
+/* ESPACIADO ENTRE SECCIONES */
+.section-space {
+  margin-top: 50px;
+}
+
+/* ÍCONOS SOCIALES */
+.social-icon {
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+/* FOOTER */
+.footer-copy {
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+}

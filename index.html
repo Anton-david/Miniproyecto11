@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Tipografías solicitadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Archivo de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>EcoFuture - Tecnología Sostenible</title>
+</head>
+<body>
+
+  <!-- NAVBAR FIJA -->
+  <div class="navbar-fixed">
+    <nav class="green-main">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">EcoFuture</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio" class="container section-space">
+    <h2 class="center-align titulo">Tecnología para un Futuro Sostenible</h2>
+
+    <!-- CARD DESTACADA -->
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=60">
+        <span class="card-title">Nuestra Misión</span>
+      </div>
+      <div class="card-content">
+        <p>
+          En EcoFuture trabajamos para integrar tecnología de vanguardia con prácticas sostenibles que reduzcan el impacto ambiental y mejoren la calidad de vida.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN FORMULARIO -->
+  <section id="contacto" class="container section-space">
+    <h3 class="center-align titulo">Únete a nuestra comunidad</h3>
+
+    <div class="row">
+      <form class="col s12" id="formEco">
+
+        <div class="input-field col s12 m6">
+          <input id="nombre" type="text" required>
+          <label for="nombre">Nombre</label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <input id="correo" type="email" required>
+          <label for="correo">Correo electrónico</label>
+        </div>
+
+        <div class="col s12 center" style="margin-top: 20px;">
+            <button type="submit" class="btn green-mainwaves-effect waves-light">
+                Enviar Datos
+            </button>
+        </div>
+
+        <!-- BOTÓN FLOTANTE -->
+        <div class="fixed-action-btn">
+          <button class="btn-floating btn-large green-main waves-effect waves-light modal-trigger" href="#modal1" type="submit">
+            <i class="material-icons">send</i>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal1" class="modal">
+    <div class="modal-content center-align">
+      <h4>¡Gracias por unirte!</h4>
+      <p>Pronto recibirás nuestras novedades sostenibles.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-close waves-effect waves-green btn green-main">Cerrar</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="page-footer green-main" id="nosotros">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h5 class="white-text">EcoFuture</h5>
+          <p class="white-text">Tecnología con propósito ambiental</p>
+
+          <!-- ICONOS -->
+          <a href="#" class="white-text social-icon"><i class="material-icons">facebook</i></a>
+          <a href="#" class="white-text social-icon"><i class="material-icons">public</i></a>
+          <a href="#" class="white-text social-icon"><i class="material-icons">mail</i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      © 2025 EcoFuture - Todos los derechos reservados
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT MATERIALIZE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    // Inicializar modal
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      M.Modal.init(elems);
+    });
+
+    // Evitar refresh y abrir modal
+    document.getElementById("formEco").addEventListener("submit", function(e){
+      e.preventDefault();
+      var modal = M.Modal.getInstance(document.getElementById("modal1"));
+      modal.open();
+    });
+  </script>
+
+</body>
+</html>
